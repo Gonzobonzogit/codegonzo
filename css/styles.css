@@ -39,7 +39,7 @@ header {
 }
 
 .name {
-    font-size: 2.5rem;
+    font-size: 40px;
     margin-bottom: 10px;
     font-weight: bold;
     text-shadow: 0 0 10px #00ff41;
@@ -47,7 +47,7 @@ header {
 }
 
 .jobs {
-    font-size: 1.2rem;
+    font-size: 19px;
     font-weight: normal;
     color: #00cc33;
     letter-spacing: 1px;
@@ -84,7 +84,7 @@ img {
 
 /* Contact Section */
 .email {
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-bottom: 10px;
     text-align: center;
     color: #00ff41;
@@ -104,7 +104,7 @@ body > p {
 }
 
 .info {
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-bottom: 15px;
     text-align: center;
     color: #00ff41;
@@ -125,7 +125,7 @@ body > p {
 }
 
 .Skells {
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-bottom: 15px;
     text-align: center;
     color: #00ff41;
@@ -151,7 +151,7 @@ body > p {
 }
 
 .accounts {
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-bottom: 15px;
     text-align: center;
     color: #00ff41;
@@ -198,7 +198,7 @@ footer {
 
 footer p {
     color: #00cc33;
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 /* ========================================
@@ -216,12 +216,12 @@ footer p {
     }
 
     .name {
-        font-size: 2rem;
+        font-size: 32px;
         letter-spacing: 1px;
     }
 
     .jobs {
-        font-size: 1rem;
+        font-size: 16px;
     }
 
     body > section,
@@ -242,7 +242,7 @@ footer p {
     .info,
     .Skells,
     .accounts {
-        font-size: 1.3rem;
+        font-size: 21px;
     }
 }
 
@@ -257,13 +257,13 @@ footer p {
     }
 
     .name {
-        font-size: 1.5rem;
+        font-size: 24px;
         letter-spacing: 0.5px;
         margin-bottom: 8px;
     }
 
     .jobs {
-        font-size: 0.9rem;
+        font-size: 14px;
     }
 
     body > section,
@@ -283,7 +283,7 @@ footer p {
     .info,
     .Skells,
     .accounts {
-        font-size: 1.1rem;
+        font-size: 18px;
     }
 
     .skills ul,
@@ -294,7 +294,7 @@ footer p {
     .skills li,
     .links li {
         margin: 6px 0;
-        font-size: 0.95rem;
+        font-size: 15px;
     }
 
     footer {
@@ -303,6 +303,6 @@ footer p {
     }
 
     footer p {
-        font-size: 0.8rem;
+        font-size: 13px;
     }
 }
