@@ -1,0 +1,308 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', 'Courier', monospace;
+
+    /* Background image - uncomment to use */
+    background-image: url("../images/debian_waifu.png");
+    background-color: #0d0d0d;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    color: #00ff41;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 2px solid #00ff41;
+    padding: 30px 20px;
+    text-align: center;
+    color: #00ff41;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+.name {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff41;
+    letter-spacing: 2px;
+}
+
+.jobs {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #00cc33;
+    letter-spacing: 1px;
+}
+
+/* Main Content Container */
+body > section,
+body > img,
+body > h3,
+body > p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 2px solid #00ff41;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+}
+
+/* Profile Image */
+img {
+    display: block;
+    margin: 30px auto;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #00ff41;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.4);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Contact Section */
+.email {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #00ff41;
+    text-shadow: 0 0 5px #00ff41;
+}
+
+body > p {
+    text-align: center;
+    color: #00cc33;
+}
+
+/* About Section */
+.about {
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 2px solid #00ff41;
+    border-radius: 8px;
+}
+
+.info {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #00ff41;
+    text-shadow: 0 0 5px #00ff41;
+}
+
+.about p {
+    text-align: center;
+    line-height: 1.8;
+    color: #00cc33;
+}
+
+/* Skills Section */
+.skills {
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 2px solid #00ff41;
+    border-radius: 8px;
+}
+
+.Skells {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #00ff41;
+    text-shadow: 0 0 5px #00ff41;
+}
+
+.skills ul {
+    list-style-position: inside;
+    text-align: center;
+    list-style: none;
+}
+
+.skills li {
+    margin: 8px 0;
+    color: #00cc33;
+}
+
+/* Links Section */
+.links {
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 2px solid #00ff41;
+    border-radius: 8px;
+}
+
+.accounts {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #00ff41;
+    text-shadow: 0 0 5px #00ff41;
+}
+
+.links ul {
+    list-style-position: inside;
+    text-align: center;
+    list-style: none;
+    list-style-type: square;
+}
+
+.links li {
+    margin: 8px 0;
+    color: #00cc33;
+}
+
+.links a {
+    color: #00ff41;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    text-shadow: 0 0 10px #00ff41;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 2px solid #00ff41;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+}
+
+footer p {
+    color: #00cc33;
+    font-size: 0.9rem;
+}
+
+/* ========================================
+   MOBILE RESPONSIVE MEDIA QUERIES
+   ======================================== */
+
+/* Tablets and smaller devices */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 15px;
+    }
+
+    header {
+        padding: 20px 15px;
+    }
+
+    .name {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .jobs {
+        font-size: 1rem;
+    }
+
+    body > section,
+    body > img,
+    body > h3,
+    body > p {
+        padding: 20px;
+        margin-top: 15px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .email,
+    .info,
+    .Skells,
+    .accounts {
+        font-size: 1.3rem;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 15px 10px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+        margin-bottom: 8px;
+    }
+
+    .jobs {
+        font-size: 0.9rem;
+    }
+
+    body > section,
+    body > img,
+    body > h3,
+    body > p {
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    img {
+        margin: 15px auto;
+        padding: 5px;
+    }
+
+    .email,
+    .info,
+    .Skells,
+    .accounts {
+        font-size: 1.1rem;
+    }
+
+    .skills ul,
+    .links ul {
+        padding-left: 10px;
+    }
+
+    .skills li,
+    .links li {
+        margin: 6px 0;
+        font-size: 0.95rem;
+    }
+
+    footer {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
