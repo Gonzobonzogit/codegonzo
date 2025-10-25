@@ -1,0 +1,324 @@
+/* Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Roboto Condensed", sans-serif;
+  background: #f3f4f6;
+  color: #1f2933;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 24px;
+  min-height: 1200px;
+  padding: 24px;
+}
+
+header {
+  grid-column: 1 / -1;
+  background: #ffffff;
+  border: 1px solid #d9dde3;
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.name {
+  font-size: 36px;
+  letter-spacing: 0.5px;
+}
+
+#me{
+  border-radius: 50%;
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 16px;
+}
+
+.jobs {
+  font-size: 18px;
+  color: #52606d;
+}
+
+.poop {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #7b8794;
+}
+
+/* Nav */
+.sidebar-container {
+  grid-column: 1;
+}
+
+.sidebar {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+}
+
+.sidebar a {
+  display: block;
+  color: #1f2933;
+  text-decoration: none;
+  background: #f9fafb;
+  border: 1px solid #cbd2d9;
+  padding: 12px 16px;
+  border-radius: 12px 0 12px 0; /* top-left and bottom-right rounded */
+  text-align: center;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* Blue glow */
+.sidebar a:hover,
+.sidebar a:focus {
+  background: #e0f2fe;
+  border-color: #3b82f6;
+  color: #1e40af;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.6),
+              0 0 25px rgba(59, 130, 246, 0.4),
+              0 0 35px rgba(59, 130, 246, 0.2);
+  transform: translateY(-2px);
+}
+
+.sidebar a:active {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+/* Base styles */
+body > section,
+body > article {
+  grid-column: 1;
+}
+
+/* Headings */
+body > article h3 {
+  font-size: 24px;
+  color: #1f2933;
+}
+
+/* About Me */
+.aboutMe {
+  background: #ffffff;
+  border: 1px solid #d9dde3;
+  border-radius: 25px 0 25px 0;
+  padding: 32px;
+}
+
+.aboutMe h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.aboutMe p {
+  font-size: 16px;
+  line-height: 2;
+  color: #3e4c59;
+}
+
+.me {
+  display: flex;
+  border-radius: 50px 50px 50px 50px;
+}
+
+/* Projects */
+#projects {
+  background-image: url('../images/Gonzo-codes-logo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #d9dde3;
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 1000px;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-showcase {
+display: flex;
+justify-content: center;
+height: 200px;
+padding: 24px;
+align-items: space-between;
+
+}
+
+.project-showcase ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 900px;
+  gap: 32px;
+  align-items: center;
+
+}
+
+.project-showcase a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-showcase li {
+  border: 2px solid #cbd2d9;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 160px;
+  background: #f9fafb;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Project1Lyra */
+.project-showcase li:nth-child(1) {
+  border-radius: 16px 0 16px 0;
+}
+
+/* Project2 */
+.project-showcase li:nth-child(2) {
+  border-radius: 16px;
+}
+
+/* Project3 */
+.project-showcase li:nth-child(3) {
+  border-radius: 0 16px 0 16px;
+}
+
+.project-showcase li:hover {
+  border-color: #3b82f6;
+  background: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact */
+#contact {
+  background: #ffffff;
+  border: 1px solid #d9dde3;
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#contact form {
+  display: grid;
+  gap: 12px;
+}
+
+#contact label {
+  font-weight: 600;
+  color: #364152;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+  font: inherit;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd2d9;
+}
+
+#contact button {
+  cursor: pointer;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px 0 12px 0; /* top-left and bottom-right rounded */
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#contact button:hover,
+#contact button:focus {
+  background: #1e40af;
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.6),
+              0 0 25px rgba(37, 99, 235, 0.4),
+              0 0 35px rgba(37, 99, 235, 0.2);
+  transform: translateY(-2px);
+}
+
+#contact button:active {
+  transform: translateY(0);
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+}
+
+/* My Links */
+.my-links {
+  background: #ffffff;
+  border: 1px solid #d9dde3;
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gonzos-code {
+  margin-bottom: 8px;
+}
+
+.my-links a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.my-links a:hover {
+  text-decoration: underline;
+  color: #1e40af;
+}
+
+/* Footer */
+footer {
+  grid-column: 1 / -1;
+  background: #ffffff;
+  border: 1px solid #d9dde3;
+  border-radius: 8px;
+  text-align: center;
+  padding: 16px;
+}
+
+footer p {
+  font-size: 14px;
+  color: #364152;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+  .sidebar ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .project-showcase ul {
+    flex-direction: column;
+    width: 100%;
+  }
+}
